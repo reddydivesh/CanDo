@@ -2,8 +2,6 @@
 
 **Can Do** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
-Submitted by: **Jayanth Devulapally**
-
 Time spent: **20hrs** hours spent in total
 
 ## User Stories
@@ -53,18 +51,4 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 Describe any challenges encountered while building the app.
 1) Handling the persist storage with SQLite database was new to me.
 2) Handling the fragments and updating the list was the most challenging thing I faced in developing this project.
-## License
 
-    Copyright 2017 Jayanth Devulapally
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
