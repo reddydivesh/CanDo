@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Can Do</string>
+
+    <string name="add_can_do">Add a Can Do</string>
+
+    <string name="can_do_added">Can do added</string>
+    <string name="unable_to_add">Unable to add. Enter values</string>
+    <string name="unable_to_mark">Unable to mark</string>
+    <string name="updated">Updated</string>
+    <string name="unable_to_update">Unable to update. Try again</string>
+    <string name="nothing_to_delete">Nothing to update</string>
+    <string name="deleted">Deleted</string>
+    <string name="unable_to_delete">Unable to delete</string>
+
+    <string name="to_do">To do</string>
+    <string name="done">Done</string>
+    <string name="archived">Archived</string>
+    <string name="changed">Changed</string>
+
+    <string name="priority_high">High</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_low">Low</string>
+
+    <string name="can_do_title">Can Do Title</string>
+    <string name="can_do_notes">Can Do notes</string>
+    <string name="due_date">Due Date</string>
+
+    <string name="priority">Priority</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="archive">Archive</string>
+    <string name="update">Update</string>
+
+
+</resources>

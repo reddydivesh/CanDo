@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_8dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_can_do_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/can_do_title"
+                android:paddingTop="@dimen/dimen_20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_can_do_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:textSize="@dimen/dimen_30sp"
+                    android:imeOptions="actionNext"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_can_do_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/can_do_notes"
+                android:paddingTop="@dimen/dimen_20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_can_do_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_can_do_due_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/due_date"
+                android:paddingTop="@dimen/dimen_20dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_can_do_due_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_priority_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:layout_marginLeft="@dimen/dimen_4dp"
+                android:paddingTop="@dimen/dimen_20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/priority"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:id="@+id/rb_priority_high"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:checked="true"
+                        android:button="@null"
+                        android:textSize="@dimen/dime_18sp"
+                        android:textColor="@color/radio_btn_text_color_selector"
+                        android:background="@drawable/radio_btn_mid_bg_selector"
+                        android:text="@string/priority_high"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_priority_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_2dp"
+                        android:layout_marginRight="@dimen/dimen_2dp"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:checked="false"
+                        android:button="@null"
+                        android:textSize="@dimen/dime_18sp"
+                        android:textColor="@color/radio_btn_text_color_selector"
+                        android:background="@drawable/radio_btn_mid_bg_selector"
+                        android:text="@string/priority_medium"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_priority_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/dimen_8dp"
+                        android:paddingBottom="@dimen/dimen_8dp"
+                        android:checked="false"
+                        android:button="@null"
+                        android:textSize="@dimen/dime_18sp"
+                        android:textColor="@color/radio_btn_text_color_selector"
+                        android:background="@drawable/radio_btn_mid_bg_selector"
+                        android:text="@string/priority_low"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
